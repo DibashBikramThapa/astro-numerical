@@ -26,7 +26,36 @@ a {
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.container{
+  /* margin: 1rem; */
+}
+
+h3{
+  font-size: 4rem;
+}
+
+.astro-bg{
+  background-image: url('/images/astro-background.png');
+  background-color: black;
+  color: white;
+  box-shadow: 0px 2px 2px 0px #2C1CE387;
+}
+
+.bg-hero{
+  background-color: #1d0e3e;
+  color: white;
+  padding: 5rem 0 5rem 0;
+}
+
+.border-hero{
+  background: rgb(36,3,92);
+  background: linear-gradient(0deg, rgba(36,3,92,1) 0%, rgba(41,23,184,1) 100%);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.content{
+  background-color: #0e0123;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem 1.5rem 2rem;
 }
