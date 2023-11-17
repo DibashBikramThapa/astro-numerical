@@ -61,7 +61,28 @@ h3{
   padding: 1.5rem 2rem 1.5rem 2rem;
 }
 
-input{
+textarea{
   border-radius: .5rem;
   color: black;
+  max-height: 5rem;
+}
+
+/* width */
+.astro-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.astro-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.astro-scrollbar::-webkit-scrollbar-thumb {
+  background: #2C1CE387;
+}
+
+/* Handle on hover */
+.astro-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #2C1CE387;
 }

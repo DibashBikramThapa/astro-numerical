@@ -1,3 +1,6 @@
+import React, { useState } from "react";
+
+
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Layout from '../components/layout';
@@ -6,6 +9,16 @@ import Input from '../components/input';
 import Datepicker from '../components/datepicker';
 
 export default function Home() {
+
+  const [user_input, settUserInput] = useState('');
+
+  const getUserInput = (text)=>{
+    if(text){
+      settUserInput(text)
+    }
+  }
+
+
   return (
     <div className="min-w-[38rem]">
       <Head>
@@ -15,9 +28,13 @@ export default function Home() {
 
       <Layout>
         <div className='bg-hero flex flex-col justify-center items-center'>
-          <Hero/>
+          <Hero
+           user_input= {user_input}
+          />
           <Datepicker/>
-          <Input/>
+          <Input
+            getUserInput={getUserInput}
+          />
         </div>
       </Layout>
 
