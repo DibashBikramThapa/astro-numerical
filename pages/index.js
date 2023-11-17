@@ -7,14 +7,14 @@ import Datepicker from '../components/datepicker';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="min-w-[38rem]">
       <Head>
         <title>AstroNumeral</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Layout>
-        <div className='bg-hero flex flex-col justify-center items-center min-h-[20rem]'>
+        <div className='bg-hero flex flex-col justify-center items-center'>
           <Hero/>
           <Datepicker/>
           <Input/>

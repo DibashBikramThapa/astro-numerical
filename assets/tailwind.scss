@@ -566,6 +566,38 @@ video {
   min-height: 6rem;
 }
 
+.min-h-\[60rem\] {
+  min-height: 60rem;
+}
+
+.min-h-\[50rem\] {
+  min-height: 50rem;
+}
+
+.min-h-\[40rem\] {
+  min-height: 40rem;
+}
+
+.min-h-\[25rem\] {
+  min-height: 25rem;
+}
+
+.min-h-\[30rem\] {
+  min-height: 30rem;
+}
+
+.min-h-\[35rem\] {
+  min-height: 35rem;
+}
+
+.min-h-\[38rem\] {
+  min-height: 38rem;
+}
+
+.min-h-\[36rem\] {
+  min-height: 36rem;
+}
+
 .w-40 {
   width: 10rem;
 }
@@ -574,32 +606,36 @@ video {
   width: 20rem;
 }
 
-.w-\[50rem\] {
-  width: 50rem;
-}
-
-.w-\[30rem\] {
-  width: 30rem;
-}
-
-.w-\[35rem\] {
-  width: 35rem;
-}
-
-.w-\[45rem\] {
-  width: 45rem;
-}
-
-.w-\[10rem\] {
-  width: 10rem;
-}
-
-.w-\[5rem\] {
-  width: 5rem;
-}
-
 .w-\[8rem\] {
   width: 8rem;
+}
+
+.w-\[18rem\] {
+  width: 18rem;
+}
+
+.min-w-\[50rem\] {
+  min-width: 50rem;
+}
+
+.min-w-\[40rem\] {
+  min-width: 40rem;
+}
+
+.min-w-\[30rem\] {
+  min-width: 30rem;
+}
+
+.min-w-\[35rem\] {
+  min-width: 35rem;
+}
+
+.min-w-\[38rem\] {
+  min-width: 38rem;
+}
+
+.min-w-\[45rem\] {
+  min-width: 45rem;
 }
 
 .flex-col {
@@ -648,29 +684,71 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-\[30rem\] {
-    width: 30rem;
+  .sm\:min-h-\[35rem\] {
+    min-height: 35rem;
+  }
+
+  .sm\:min-h-\[40rem\] {
+    min-height: 40rem;
+  }
+
+  .sm\:min-h-\[50rem\] {
+    min-height: 50rem;
+  }
+
+  .sm\:w-\[50rem\] {
+    width: 50rem;
+  }
+
+  .sm\:w-\[40rem\] {
+    width: 40rem;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:w-\[50rem\] {
-    width: 50rem;
+  .md\:h-\[40rem\] {
+    height: 40rem;
   }
 
-  .md\:w-\[30rem\] {
-    width: 30rem;
+  .md\:min-h-\[40rem\] {
+    min-height: 40rem;
+  }
+
+  .md\:min-h-\[35rem\] {
+    min-height: 35rem;
+  }
+
+  .md\:min-h-\[30rem\] {
+    min-height: 30rem;
+  }
+
+  .md\:min-h-\[20rem\] {
+    min-height: 20rem;
+  }
+
+  .md\:min-h-\[25rem\] {
+    min-height: 25rem;
+  }
+
+  .md\:w-\[35rem\] {
+    width: 35rem;
+  }
+
+  .md\:w-\[50rem\] {
+    width: 50rem;
   }
 
   .md\:w-\[40rem\] {
     width: 40rem;
   }
+}
 
-  .md\:w-\[45rem\] {
-    width: 45rem;
-  }
-
-  .md\:w-\[35rem\] {
-    width: 35rem;
+@media (min-width: 1024px) {
+  .lg\:w-\[50rem\] {
+    width: 50rem;
   }
 }

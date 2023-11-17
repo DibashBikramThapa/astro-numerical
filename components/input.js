@@ -10,7 +10,7 @@ export default function input() {
 }
 
   return (
-    <div className="mt-5 border-hero md:w-[50rem] w-[20rem]">
+    <div className="mt-5 border-hero sm:w-[40rem] lg:w-[50rem] w-[20rem]">
         <div className="content flex justify-between">
             <input
                 value={text}
