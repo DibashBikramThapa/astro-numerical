@@ -10,15 +10,33 @@ export default function hero({user_input}) {
         }
     }
 
+    const getChatBorder = (index)=>{
+        const key=index%5
+        switch(key){
+            case 1:
+                return 'rounded-tl-lg'
+            case 2:
+                return 'rounded-tr-lg'
+            case 3:
+                return 'rounded-bl-lg'
+            case 4:
+                return 'rounded-br-lg'
+            default:
+                return 'rounded-lg'
+        }
+
+    }
+
     const UpdatedUserInput = ()=>{
         return (
             <>
-            {text.map(each=>
-                <ul className="list-disc">
-                    <li>
+                <ul>
+                {text.map((each,index)=>
+                    <li key={index} className={getChatBorder(index) + ' mt-2 p-1 border-indigo-300 border-[.1rem] break-words'}>
                         {each}
                     </li>
-                </ul>)}
+                )}
+                </ul>
             </>
         )
     }
@@ -29,7 +47,7 @@ export default function hero({user_input}) {
 
 
     return (
-        <div className="border-hero sm:w-[40rem] lg:w-[50rem] w-[20rem]">
+        <div className="border-hero bg-astro sm:w-[40rem] lg:w-[50rem] w-[20rem]">
             <div className="content pl-[2rem] h-[38rem] sm:h-[35rem] md:h-[20rem] italic astro-scrollbar overflow-y-auto">
                 {text.length ?
                     <UpdatedUserInput/>

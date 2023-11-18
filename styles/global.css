@@ -48,9 +48,12 @@ h3{
   padding: 5rem 0 5rem 0;
 }
 
-.border-hero{
+.bg-astro{
   background: rgb(36,3,92);
   background: linear-gradient(0deg, rgba(36,3,92,1) 0%, rgba(41,23,184,1) 100%);
+}
+
+.border-hero{
   border-radius: 0.5rem;
   padding: 1.5rem 2rem 1.5rem 2rem;
 }
@@ -58,7 +61,7 @@ h3{
 .content{
   background-color: #0e0123;
   border-radius: 0.5rem;
-  padding: 1.5rem 2rem 1.5rem 2rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
 }
 
 textarea{

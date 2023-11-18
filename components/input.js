@@ -16,7 +16,7 @@ export default function input({getUserInput}) {
 
 
   return (
-    <div className="mt-5 border-hero sm:w-[40rem] lg:w-[50rem] w-[20rem]">
+    <div className="mt-5 bg-astro border-hero sm:w-[40rem] lg:w-[50rem] w-[20rem]">
         <div className="content flex justify-between">
             <textarea
                value={text}
@@ -29,7 +29,7 @@ export default function input({getUserInput}) {
                 onClick={returntUserInput}
                 class='p-3 bg-blue-800 hover:bg-purple-800'
                 data-te-toggle="tooltip"
-                title="Enter to chat!"
+                title="Click to chat!"
               >
                 <img class='' src={'/images/astro-enter.png'}/>
               </button>
