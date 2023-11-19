@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function input({getUserInput}) {
+export default function input({user_date, getUserInput}) {
 
   const [text, setText] = useState('');
 
@@ -10,8 +10,10 @@ export default function input({getUserInput}) {
   }
 
   const returntUserInput = ()=>{
-    getUserInput(text)
-    setText('')
+    if(user_date){
+      getUserInput(text)
+      setText('')
+    }
   }
 
 
@@ -27,11 +29,11 @@ export default function input({getUserInput}) {
             />
               <button
                 onClick={returntUserInput}
-                class='p-3 bg-blue-800 hover:bg-purple-800'
+                className='p-3 bg-blue-800 hover:bg-purple-800'
                 data-te-toggle="tooltip"
                 title="Click to chat!"
               >
-                <img class='' src={'/images/astro-enter.png'}/>
+                <img className='' src={'/images/astro-enter.png'}/>
               </button>
         </div>
     </div>

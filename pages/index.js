@@ -11,11 +11,10 @@ import Datepicker from '../components/datepicker';
 export default function Home() {
 
   const [user_input, settUserInput] = useState('');
+  const [user_date, settUserDate] = useState('');
 
   const getUserInput = (text)=>{
-    if(text){
-      settUserInput(text)
-    }
+    settUserInput(text)
   }
 
 
@@ -30,9 +29,13 @@ export default function Home() {
         <div className='bg-hero flex flex-col justify-center items-center'>
           <Hero
            user_input= {user_input}
+           user_date={user_date}
           />
-          <Datepicker/>
+          <Datepicker
+            settUserDate={settUserDate}
+          />
           <Input
+            user_date={user_date}
             getUserInput={getUserInput}
           />
         </div>
